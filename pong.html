@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Kufam&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+        <style>
+            @import url(style.css);
+            p.highlight {
+                color: red;
+            }
+            svg {
+                background-color: rgb(41, 41, 36);
+            }
+            ul {font-family: 'Raleway', sans-serif; list-style-type: none;}
+            .points {font-family: 'Kufam', sans-serif; font-size: 80px; fill: white; user-select: none;}
+            #container {width: 100%;  margin-top: 15px;}
+            #right {float: left; width: 400px; height: 600px; background-color: #2b2b2b; color: white}
+            #left {float: left; width: 650px;}
+            #self {font-family: 'Raleway', sans-serif; margin-left: 10px;}
+            #pwin {color: #eac4ff; margin-left: -4px}
+            #awin {color: #c4e9ff; margin-left: -4px}
+        </style>
+        <script src="./dist/pong.js"></script>
+    </head>
+    <body>
+        <div id="container">
+            <div id="left">
+                <svg id="canvas" width="600" height="600">
+                    <rect id="player" width="10" height="60" x="50" y="275" fill="#ffffff"/>
+                    <rect id="ai" width="10" height="60" x="550" y="275" fill="#ffffff"/>
+                    <line id="mid" x1="300" y1="0" x2="300" y2="600" stroke="#ffffff" 
+                        stroke-dasharray="20"/>
+                    <circle id="ball" r="8" cx="300" cy="300" fill="#ffffff"/>
+                    <text id="score1" x="150" y="80" class="points">0</text>
+                    <text id="score2" x="400" y="80" class="points">0</text>
+                </svg>
+            </div>
+            <div id="right">
+                <p id="self">Liow Gian Hao<br>30666910<br>glio0001@student.monash.edu</p>
+                <ul id="history"> <b>Match History</b>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>
